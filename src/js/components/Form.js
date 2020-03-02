@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addArticle } from "../actions/index";
-
+import { ADD_ARTICLE } from "../constants/action-types";
 function mapDispatchToProps(dispatch) {
     return {
       addArticle: article => dispatch(addArticle(article))
